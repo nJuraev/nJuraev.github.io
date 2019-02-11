@@ -1,0 +1,403 @@
+/*Colors*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+/* fonts settings*/
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../fonts/MontserratRegular.eot');
+  src: url('../fonts/MontserratRegular.eot') format('embedded-opentype'), url('../fonts/MontserratRegular.woff2') format('woff2'), url('../fonts/MontserratRegular.woff') format('woff'), url('../fonts/MontserratRegular.ttf') format('truetype'), url('../fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+}
+body {
+  font-family: 'MontserratRegular', sans-serif;
+}
+section {
+  padding: 4rem 0;
+}
+.tellmemore {
+  background-color: #fed136;
+  padding: 2rem 4rem;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 5rem auto;
+  display: block;
+}
+.tellmemore:hover {
+  cursor: pointer;
+  background-color: #fec708;
+}
+.main {
+  min-height: 700px;
+  color: #fff;
+  background: #ffffff url(../img/bg.jpg) center center;
+}
+.main .golden-brand {
+  font-family: Wisdom;
+  color: #fed136;
+  font-size: 2.6rem;
+  /* Приближение из-за подстановки шрифтов */
+  line-height: 1.577;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  font-style: italic;
+}
+.main #myNavbar a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.main #myNavbar a:hover {
+  color: #e8e8e8;
+}
+.main #myNavbar a .active {
+  color: #fed136;
+}
+.main-header {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+.main-header small {
+  font-size: 3rem;
+  display: block;
+}
+h2.title {
+  font-size: 4rem;
+  color: 222222;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+h2.title small {
+  display: block;
+  color: #777777;
+  text-transform: none;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+/*Services*/
+.services .service-item {
+  text-align: center;
+}
+.services .service-item img {
+  margin: auto;
+  padding: 1rem;
+}
+.services .service-item h3 {
+  font-size: 1.8em;
+  color: 222222;
+  font-weight: 700;
+}
+.services .service-item p {
+  padding: 2rem;
+  color: #777777;
+  font-size: 1.4rem;
+}
+.services .arrow {
+  position: absolute;
+  border: none;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  background-size: 190%;
+  transform: translateY(-50);
+}
+.services .prev {
+  left: 0;
+  background: url(../img/prev.png) center no-repeat;
+  background-size: 80%;
+}
+.services .next {
+  right: 0;
+  background: url(../img/next.png) center no-repeat;
+  background-size: 80%;
+}
+.about .row {
+  padding: 4rem 0;
+}
+.about-elements {
+  display: flex;
+}
+.about-text-block {
+  flex: 1;
+  padding: 0 2rem;
+}
+.about-empty-block {
+  flex: 1;
+  padding: 0 2rem;
+}
+.about-image-block {
+  width: 14rem;
+  display: inline-block;
+}
+.about-header {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.about-text {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.about-image {
+  width: 14rem;
+  height: 14rem;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+.about .circle {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: #fed136;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.about .circle-border {
+  display: inline-block;
+  border: 0.3rem solid #f1f1f1;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+}
+.myform {
+  display: block;
+  background-color: #fff;
+  padding: 4rem 5rem	;
+  text-align: center;
+  /*Поле для ввода*/
+}
+.myform-input {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  border: 1px solid #dddddd;
+  padding: 1rem;
+}
+.myform label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+/* портфолио*/
+.portfolio {
+  background-color: #f7f7f7;
+}
+.portfolio-item {
+  background-color: #fff;
+  margin: 3rem 1.5rem;
+}
+.portfolio-header {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.8;
+  text-align: center;
+}
+.portfolio-subtitle {
+  display: block;
+  color: #777777;
+  text-transform: none;
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 7rem;
+}
+.portfolio h4 {
+  font-size: 1.8rem;
+  font-weight: -700;
+  text-align: center;
+  padding-top: 1rem;
+}
+.portfolio p {
+  display: block;
+  color: #777777;
+  text-transform: none;
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.portfolio img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.team {
+  /*Team*/
+}
+.team h4 {
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 1.6;
+}
+.team .spec {
+  color: #777777;
+}
+.team-member-image {
+  width: 17rem;
+  height: 17rem;
+}
+.team-devis {
+  margin: 3rem 0;
+  font-weight: 400;
+  color: #777777;
+}
+/* Section contacts*/
+.contacts {
+  background: #222222 url(../img/map-bg.png) 0 0 no-repeat;
+  background-position: right bottom;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.contacts-title {
+  color: #fff;
+}
+.contacts ::-webkit-input-placeholder {
+  color: #777777;
+  text-transform: uppercase;
+}
+.contacts ::-moz-placeholder {
+  color: #777777;
+  text-transform: uppercase;
+}
+.contacts :-moz-placeholder {
+  color: #777777;
+  text-transform: uppercase;
+}
+.contacts :-ms-input-placeholder {
+  color: #777777;
+  text-transform: uppercase;
+}
+.contacts form {
+  padding: 3rem;
+}
+.contacts input,
+.contacts textarea {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+/* Section contacts*/
+/* Модальное окно*/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  /*display: none;*/
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  padding: 4rem;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: white;
+}
+.popup-close {
+  position: absolute;
+  top: -1.4rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 3rem;
+}
+.popup-form {
+  padding: 0;
+  margin-top: 1rem;
+}
+.popup .send-form {
+  padding: 1rem 2rem;
+  font-size: 2rem	;
+}
+@media screen and (min-width: 1201px) {
+  /* col-xl */
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* col-lg */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* col-md */
+  .contacts {
+    background: #222222 url(../img/map-bg.png) no-repeat center;
+    background-size: 70%;
+  }
+  .about-text-block {
+    flex: 5;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  /* col-sm */
+  .contacts {
+    background: #222222 url(../img/map-bg.png) no-repeat center;
+    background-size: 70%;
+  }
+  .about .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-image-block {
+    order: 1px;
+    margin: auto;
+  }
+  .about-text-block {
+    flex: 10;
+    order: 2;
+  }
+  .team {
+    text-align: center;
+  }
+  .team-member {
+    margin-bottom: 2rem;
+  }
+  .copyright p {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  /* col-xs */
+  .about .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-image-block {
+    order: 1px;
+    margin: auto;
+  }
+  .about-text-block {
+    flex: 10;
+    order: 2;
+  }
+  .team {
+    text-align: center;
+  }
+  .team-member {
+    margin: 2rem 0;
+  }
+  .copyright p {
+    text-align: center;
+  }
+}
